@@ -7,21 +7,36 @@
 </head>
 <body>
 	<div id="banner">
-		<h1>CHAT APP MONK</h1>
+		<h1>BOX INVASION v0.1</h1>
 	</div>
 	
+	<div id="app-window">
 	
-	<div id="mario-chat">
-		<div id="chat-window">
-			<div id="output">
-				
-			</div>			
+		<div id="mario-chat">
+			<div id="chat-window">
+				<div id="output"></div>
+				<div id="feedback"></div>			
+			</div>
+
+			<input type="text" id="handle" placeholder="handle">
+			<input type="text" id="message" placeholder="message">
+			<button id="send">Send</button>
 		</div>
-		<input type="text" id="handle" placeholder="handle">
-		<input type="text" id="message" placeholder="message">
-		<button id="send">Send</button>
+
+		<div id="game-window">
+			<div id="canvas">
+				<canvas id="canvas"></canvas>
+			</div>
+			<!-- <div id="cp"></div>
+			<div id="game-message"></div> -->
+		</div>
+
 	</div>
 
+
+
+
 	<script src="/chat.js"></script>
+	<script src="/game.js"></script>
 </body>
 </html>

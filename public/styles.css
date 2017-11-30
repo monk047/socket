@@ -1,6 +1,6 @@
 body{
     font-family: 'Nunito';
-    background: blue;
+    background: rgba(45, 0, 39,0.9);
 }
 
 h2{
@@ -14,15 +14,24 @@ h2{
     background: #236cff;
     margin: auto;
     text-align: center;
-    
+
 }
 
+#app-window{
+    max-width: 900px;
+    margin:  auto;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+    border-radius: 2px;
+}
+
+/*Chat window*/
 #mario-chat{
-    max-width: 600px;
-    margin: 30px auto;
+    max-width: 300px;
+    margin: auto;
     border: 1px solid #ddd;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
     border-radius: 2px;
+    float: left;
 }
 
 #chat-window{
@@ -46,6 +55,30 @@ h2{
 
 #output strong{
     color: #575ed8;
+}
+
+/*game window*/
+
+#game-window {
+ 
+    margin: auto 30px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+    border-radius: 2px;
+    float: left;
+
+}
+
+#cp {
+
+}
+
+#game-message {
+
+    height: 100px;
+    overflow: auto;
+    background: #f9f9f9;
+
 }
 
 label{
@@ -75,4 +108,12 @@ button{
     padding: 12px 0;
     width: 100%;
     border-radius: 0 0 2px 2px;
+}
+
+canvas {
+   /* height: 580px;
+    width: 580px;*/
+    display: block;
+  background-color: rgba(96, 202, 255, 0.9);
+  margin: auto;
 }
