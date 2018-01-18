@@ -1,5 +1,6 @@
 const express = require('express');
 const socket = require('socket.io');
+const socketserver = require('./socketserver');
 
 
 const app = express();
@@ -16,16 +17,8 @@ app.use(express.static('public'));
 //******************
 const io = socket(server);
 
-io.on('connection', (socket) => {
-	// console.log(`connection made with ${socket.id}`);
-	
-	socket.on('chat', (data) => {
-		io.sockets.emit('chat', data);
-	});
-	// console.log(socket.id);
+module.exports.io = io;
 
+socketserver.iouse();
+socketserver.on();
 
-	socket.on('typing',(data) => {
-		socket.broadcast.emit('typing', data);
-	});
-});

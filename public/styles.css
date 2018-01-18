@@ -11,7 +11,7 @@ h2{
 
 #banner {
     max-width: 600px;
-    background: #236cff;
+    background: rgb(142, 47, 130);
     margin: auto;
     text-align: center;
 
@@ -62,7 +62,7 @@ h2{
 #game-window {
  
     margin: auto 30px;
-    border: 1px solid #ddd;
+    /*border: 1px solid #ddd;*/
     box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
     border-radius: 2px;
     float: left;
@@ -71,13 +71,23 @@ h2{
 
 #cp {
 
+    border: 1px solid #ddd;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+    border-radius: 2px;
+    background: #f9f9f9;
+    margin-top: 2px;
+
 }
 
 #game-message {
 
+    border: 1px solid #ddd;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+    border-radius: 2px;
     height: 100px;
     overflow: auto;
     background: #f9f9f9;
+    margin-top: 2px;
 
 }
 
@@ -114,6 +124,6 @@ canvas {
    /* height: 580px;
     width: 580px;*/
     display: block;
-  background-color: rgba(96, 202, 255, 0.9);
-  margin: auto;
+    background-color: rgba(96, 202, 255, 0.9);
+    margin: auto;
 }

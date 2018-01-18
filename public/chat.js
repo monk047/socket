@@ -31,10 +31,12 @@ socket.on('chat', (data) => {
 });
 
 socket.on('typing', (data) => {
-	//feedback.innerHTML += '<p><strong>'+ data + ' is typing..</strong>' ;
-	// console.log(typeof(feedback.innerHTML));
 	if (feedback.innerHTML === '')
 	{
 		feedback.innerHTML += '<p><strong>'+ data + ' is typing..</strong>' ;
 	}
+});
+
+socket.on('active', (data) => {
+	console.log("data received on chat file"+data.username);
 });
